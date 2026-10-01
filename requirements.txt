@@ -1,0 +1,17 @@
+# Dependencias de Python para MesaControl.
+# Instalar con: pip install -r requirements.txt
+#
+# NOTA: pyodbc necesita que, además, el sistema operativo tenga instalados
+# los drivers ODBC correspondientes (no se instalan con pip):
+#   - "SQL Server Native Client 11.0" (para SICAF/Flota, Infor y CGestion)
+#   - "NetSuite Drivers 64bit" (para la conexión Oracle/NetSuite)
+
+pandas==2.3.3
+numpy==2.2.6
+SQLAlchemy==2.0.44
+pyodbc==5.3.0
+python-dotenv==1.2.1
+google-auth==2.41.1
+google-auth-oauthlib==1.2.3
+google-auth-httplib2==0.2.1
+google-api-python-client==2.198.0

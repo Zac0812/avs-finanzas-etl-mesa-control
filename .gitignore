@@ -1,0 +1,50 @@
+# ============================================================
+# PROPUESTA de .gitignore para MesaControl
+# (archivo creado pero no se ejecutó ningún comando de git)
+# ============================================================
+
+# --- Entornos virtuales de Python ---
+venv/
+env/
+ENV/
+.venv/
+
+# --- Variables de entorno / secretos ---
+# .env contiene contraseñas y usuarios reales: nunca se sube.
+# .env.example SI se sube (es la plantilla sin datos reales).
+.env
+.env.*
+!.env.example
+
+# --- Credenciales de Google (service account, OAuth, tokens) ---
+# La carpeta credentials/ real contiene llaves privadas: nunca se sube.
+# credentials_example/ SI se sube (son plantillas sin datos reales).
+credentials/
+
+# --- Cache / compilados de Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- PyCharm / IDE ---
+.idea/
+
+# --- Logs ---
+*.log
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------------
+# OPCIONAL - a decidir contigo:
+# Si en el futuro vuelven a aparecer en la raíz archivos de datos
+# exportados/descargados (como el db_Tesoreria.xlsx que existía
+# antes), probablemente contengan información real de negocio y
+# convendría no subirlos. Descomenta si aplica:
+# *.xlsx
+# *.csv
+# ------------------------------------------------------------
